@@ -1,0 +1,47 @@
+.pageTotal {
+    display: inline-flex;
+    position: fixed;
+}
+.container2{
+    display: inline-flex;
+    margin-top: 2rem;
+    padding: 1rem; 
+}
+.description{
+    margin-right: 10rem;
+}
+.div1 {
+    padding: 1rem;
+    margin-right: 37rem;
+}
+.div2 {
+    padding: 1rem;
+}
+
+.btnClass {
+    border: none;
+    background: none;
+    color: blue;
+    font-size: 18px;
+    margin-right: 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+.btnRow {
+    padding: 1rem;
+    margin-left: 5rem;
+}
+.btnClass:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 17px rgb(25 7 95 / 35%);
+}
+.btnClass:active {
+    background-color: rgba(34, 240, 15, 0.527);
+}
+.pageChangeClass{
+    padding: 2.5rem;
+    padding-left: 1rem;
+}
+.btnHeaderClass{
+    display: inline-flex;
+}
