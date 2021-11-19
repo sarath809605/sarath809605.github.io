@@ -1,48 +1,165 @@
-<body style="background-image: url(assets/images/portfoliobg.jpg);">
-<div class="pageTotal">
-  <div class="div1">
-    <h4>WELCOME</h4>
-  </div>
-  <div class="btnRow">
-    <button mat-button color="primary" class="btnClass" (click)="onAboutClick()">About</button>
-    <button mat-button color="primary" class="btnClass" (click)="onWorkClick()">Work Experience</button>
-    <button mat-button color="primary" class="btnClass" (click)="onAddressClick()">Address</button>
-    <button mat-button color="primary" class="btnClass" (click)="onContactClick()">Contact Me</button>
-  </div>
-</div>
-<div class="container2">
-  <div class="description">
-    <h1>I'm Sarath, a front end developer. </h1>
-    <h4>I have an experience of ...... as an ....... Please go through the .....</h4>
-  </div>
-  <div class="div2">
-    <!-- <div class="btnRow">
-    <button mat-button color="primary" class="btnClass" (click)="onAboutClick()">About</button>
-    <button mat-button color="primary" class="btnClass" (click)="onWorkClick()">Work Experience</button>
-    <button mat-button color="primary" class="btnClass" (click)="onAddressClick()">Address</button>
-    <button mat-button color="primary" class="btnClass" (click)="onContactClick()">Contact Me</button>
-  </div> -->
-    <div>
-      <img src='/assets/images/newProfile.jpg' height="250" width="250">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header class="headerClass">
+    <h2 style="color: #000;">My Portfolio</h2>
+</header>
+<body class="bodyClass">
+  <div class="pageTotal">
+    <div class="div1">
+      <h4>WELCOME TO MY WEBSITE</h4>
+    </div>
+    <div class="btnRow">
+      <button mat-button color="primary" class="btnClass" (click)="onAboutClick()">About</button>
+      <button mat-button color="primary" class="btnClass" (click)="onWorkClick()">Work Experience</button>
+      <button mat-button color="primary" class="btnClass" (click)="onAddressClick()">Address</button>
+      <button mat-button color="primary" class="btnClass" (click)="onContactClick()">Contact Me</button>
     </div>
   </div>
-</div>
+  <!-- <p id="idAutoText"></p> -->
+  <!-- <div class="container2"> -->
+  <div class="description">
+    <p class="descriptionPtag">WELCOME TO MY WEBSITE</p>
+    <!-- <h2>Hi There, I'm Sarath. </h2> -->
+    <h2 id="idAutoText">H</h2>
+    <p class="descriptionPtag">I'm a front-end developer.<br /> I have an experience of 1 year.</p>
+  </div>
 
-<div></div>
+
+  <div id="about">
+    <h2 class="subHeader" style="color: blueviolet;">About Me</h2>
+    <div class="card">
+      <img src='/assets/images/newProfile.jpg' alt="Sarath" style="width:100%">
+      <h1>M.Sarath Kumar</h1>
+      <p class="title">Associate Software Engineer</p>
+      <p>DOB - 03/07/1999</p>
+      <div style="padding-bottom: 10px;">
+        <a href="www.twitter.com/SarathMerangi" target="_blank"><i class="large twitter icon"></i></a>
+        <a href="www.linkedin.com/in/sarath-kumar-merangi8096" target="_blank"><i class="large linkedin icon"></i></a>
+        <a href="https://github.com/sarath809605" target="_blank"><i class="large github icon"></i></a>
+      </div>
+    </div>
+    <div class="skillsPaddingClass">
+    <p style="padding-top: 20px;" class="aboutmePtag">Hi, I'm M. SARATH KUMAR</p>
+    <p class="aboutmePtag">I completed my graduation in year 2020 from Gayatri Vidya Parishad College of Engineering,
+      Visakhapatnam. I'm very interested in developing websites and mobile apps too.</p>
+    </div>
+  </div>
+
+  <!-- <hr class="dashed"> -->
+  <div class="skillsPaddingClass">
+    <h3 style="color: #e22b2b;">My Hobbies</h3>
+    <label>Listening to Music</label><br/>
+    <label>Cooking</label>
+  </div>
+
+  <div id="work" class="skillsPaddingClass">
+    <h3 style="color: #e22b2b;">My Skills</h3>
+    <label><b>Competency:</b>&nbsp; UI & UX</label><br />
+    <label><b>Programming Languages:</b>&nbsp; C,Python & Java script</label><br />
+    <label><b>Web Technologies:</b></label>
+    <div>
+      <label>SAP UI5</label>
+      <div class="ui tiny orange progress">
+        <div class="bar" style="width: 85%;"></div>
+      </div>
+    </div>
+    <div>
+      <label>CSS</label>
+      <div class="ui tiny green progress">
+        <div class="bar" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div>
+      <label>HTML</label>
+      <div class="ui tiny blue progress">
+        <div class="bar" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div>
+      <label>React</label>
+      <div class="ui tiny olive  progress">
+        <div class="bar" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div>
+      <label>Angular</label>
+      <div class="ui tiny red progress">
+        <div class="bar" style="width: 70%;"></div>
+      </div>
+    </div>
+    <!-- use progress bar -->
+  </div>
 
 
-<div style="height: 500px"></div>
-<div id="about" class="pageChangeClass" style="height: 500px;">
-  <h2>About</h2>
-</div>
-<div id="work" class="pageChangeClass" style="height: 500px;">
-  <h2>Work and Experience</h2>
-</div>
-<div id="address" class="pageChangeClass" style="height: 500px;">
-  <h2>Address</h2>
-</div>
-<div id="contact" class="pageChangeClass" style="height: 500px;">
-  <h2>Contact</h2>
-</div>
-<!-- <router-outlet></router-outlet> -->
+  <div id="workandexperience" class="pageChangeClass" style="padding: 5px;">
+    <h2 class="subHeader" style="color: blueviolet;">Work and Experience</h2>
+    <p>I have 1 year of experience as a front-end developer.Worked in UX also.</p>
+    <h3 style="color: #e22b2b;">Projects</h3>
+
+    <div class="flip-card" style="padding-bottom: 10px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Service Consumer Application</h1>
+        </div>
+        <div class="flip-card-back">
+          <h5>Using this application the users can book a service for their car and can track the same.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" style="padding-bottom: 10px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Smart Planning Engine</h1>
+        </div>
+        <div class="flip-card-back">
+          <h5>This application helps the user to plan the maintanance or drilling tasks for wells in a effective manner
+            so that it will reduce downtime and maximize production. </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" style="padding-bottom: 10px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Visitor Management System</h1>
+        </div>
+        <div class="flip-card-back">
+          <h5>Visitor management system provides intelligent and effective way to manage the visitors
+            coming to an organisation.facilities like creation of meeting , sending email confirmation , check-in ,
+            checkout,
+            real time notifications and lot more are available.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Admission Portal</h1>
+        </div>
+        <div class="flip-card-back">
+          <h5>This application helps with the Admission of a
+            student.Features like seat allotment, regulation and curriculum creation,time tables, marks creation and lot
+            more.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contact" class="pageChangeClass" style="padding: 5px;">
+    <h2 class="subHeader" style="color: blueviolet;">Contact</h2>
+    <label style="padding: 4px;"><i class="map marker alternate icon"></i>&nbsp; Vizianagaram, Andhra Pradesh, 535522.</label><br/>
+    <label style="padding: 4px;"><i class="phone icon"></i>&nbsp; +91 7989826029</label><br/>
+    <label style="padding: 4px;"><i class="envelope icon"></i>&nbsp; sarathkumar.merangi@gmail.com</label>
+    <h5 style="color: blueviolet;">foloow me on social media</h5>
+    <div style="padding: 4px;">
+      <a href="www.twitter.com/SarathMerangi" target="_blank"><i class="large twitter icon"></i></a>
+      <a href="www.linkedin.com/in/sarath-kumar-merangi8096" target="_blank"><i class="large linkedin icon"></i></a>
+      <a href="https://github.com/sarath809605" target="_blank"><i class="large github icon"></i></a>
+    </div>
+  </div>
 </body>
