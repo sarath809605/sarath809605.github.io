@@ -1,33 +1,106 @@
 <head>
+  <title>Sarath Kumar M</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<header class="headerClass">
-    <h2 style="color: #000;">My Portfolio</h2>
-</header>
+
 <body class="bodyClass">
-  <div class="pageTotal">
-    <div class="div1">
-      <h4>WELCOME TO MY WEBSITE</h4>
+  <nav id="navbar" class="navbarClass">
+    <div class="logo">
+      <h1>Portfolio</h1>
     </div>
-    <div class="btnRow">
-      <button mat-button color="primary" class="btnClass" (click)="onAboutClick()">About</button>
-      <button mat-button color="primary" class="btnClass" (click)="onWorkClick()">Work Experience</button>
-      <button mat-button color="primary" class="btnClass" (click)="onAddressClick()">Address</button>
-      <button mat-button color="primary" class="btnClass" (click)="onContactClick()">Contact Me</button>
-    </div>
-  </div>
-  <!-- <p id="idAutoText"></p> -->
-  <!-- <div class="container2"> -->
-  <div class="description">
+    <div class="openMenu"><i class="bars icon"></i></div>
+    <ul class="mainMenu">
+      <li><a class="homenav active" href="#home">Home</a></li>
+      <li><a class="aboutnav" href="#about">About Me</a></li>
+      <li><a class="workandexperiencenav" href="#workandexperience">Work and Experience</a></li>
+      <li><a class="contactnav" href="#contact">Contact</a></li>
+      <div class="closeMenu"><i class="close icon"></i></div>
+    </ul>
+  </nav>
+
+
+
+
+  <div class="description" id="home" style="padding: 10px;margin-top: 50px;">
     <p class="descriptionPtag">WELCOME TO MY WEBSITE</p>
-    <!-- <h2>Hi There, I'm Sarath. </h2> -->
     <h2 id="idAutoText">H</h2>
-    <p class="descriptionPtag">I'm a front-end developer.<br /> I have an experience of 1 year.</p>
+    <p class="descriptionPtag">I have an experience of 1 year as a<br /> front-end developer.</p>
   </div>
 
+  <h1 class="desktopContent subHeader" style="color: blueviolet;">About Me</h1>
+  <div class="desktopContent skillsPaddingClass">
+    <p style="padding-top: 20px;" class="aboutmePtag">Hi, I'm M. SARATH KUMAR.
+      I'm an Innovative front-end developer with 1 year experience in building and 
+      maintaining responsive websites.Proficient in SAP UI5, React JS,Angular,HTML,CSS.
+      I had completed my graduation in 2020 from Gayatri Vidya Parishad College of
+      Engineering,Visakhapatnam. I'm very much interested 
+      in developing websites and mobile apps too.</p>
+  </div>
+  <div class="desktopContent skillsProfilecardDiv">
+    <div style="width: 50%;">
+      <div class="skillsPaddingClass">
+        <h2 style="color: #e22b2b;">My Hobbies</h2>
+        <label style="font-size: 17px;">Listening to Music</label><br />
+        <label style="font-size: 17px;">Cooking</label>
+      </div>
+      <div id="work" class="skillsPaddingClass">
+        <h2 style="color: #e22b2b;">My Skills</h2>
+        <label style="font-size: 17px;"><b>Competency:</b>&nbsp; UI & UX</label><br />
+        <label style="font-size: 17px;"><b>Programming Languages:</b>&nbsp; C,Python & Java script</label><br />
+        <label style="font-size: 17px;"><b>Web Technologies:</b></label>
+        <div style="margin-top: 2rem;">
+          <label class="skillsLableClass">SAP UI5</label>
+          <div class="ui orange progress customProBar">
+            <div class="bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div>
+          <label class="skillsLableClass">CSS</label>
+          <div class="ui green progress customProBar">
+            <div class="bar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div>
+          <label class="skillsLableClass">HTML</label>
+          <div class="ui blue progress customProBar">
+            <div class="bar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div>
+          <label class="skillsLableClass">React</label>
+          <div class="ui olive  progress customProBar">
+            <div class="bar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div>
+          <label class="skillsLableClass">Angular</label>
+          <div class="ui red progress customProBar">
+            <div class="bar" style="width: 70%;"></div>
+          </div>
+        </div>
+        <!-- use progress bar -->
+      </div>
+    </div>
+    <div id="about" style="margin-left: 2rem;width: 50%;">
 
-  <div id="about">
+      <div class="card">
+        <img src='/assets/images/newProfile.jpg' alt="Sarath" style="width:100%">
+        <h1>M.Sarath Kumar</h1>
+        <p class="title">Associate Software Engineer</p>
+        <p>DOB - 03/07/1999</p>
+        <p><i class="phone icon"></i>&nbsp; +91 7989826029</p>
+        <div style="padding-bottom: 10px;">
+          <a href="www.twitter.com/SarathMerangi" target="_blank"><i class="large twitter icon"></i></a>
+          <a href="www.linkedin.com/in/sarath-kumar-merangi8096" target="_blank"><i class="large linkedin icon"></i></a>
+          <a href="https://github.com/sarath809605" target="_blank"><i class="large github icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div style="padding: 10px;">
+  <div id="about" class="mobileContent">
     <h2 class="subHeader" style="color: blueviolet;">About Me</h2>
     <div class="card">
       <img src='/assets/images/newProfile.jpg' alt="Sarath" style="width:100%">
@@ -41,51 +114,54 @@
       </div>
     </div>
     <div class="skillsPaddingClass">
-    <p style="padding-top: 20px;" class="aboutmePtag">Hi, I'm M. SARATH KUMAR</p>
-    <p class="aboutmePtag">I completed my graduation in year 2020 from Gayatri Vidya Parishad College of Engineering,
-      Visakhapatnam. I'm very interested in developing websites and mobile apps too.</p>
+      <p style="padding-top: 20px;" class="aboutmePtag">Hi, I'm M. SARATH KUMAR</p>
+      <p class="aboutmePtag">I'm an Innovative front-end developer with 1 year experience in building and 
+        maintaining responsive websites.Proficient in SAP UI5, React JS,Angular,HTML,CSS.
+        I had completed my graduation in 2020 from Gayatri Vidya Parishad College of
+        Engineering,Visakhapatnam.</p>
     </div>
   </div>
 
+
   <!-- <hr class="dashed"> -->
-  <div class="skillsPaddingClass">
+  <div class="skillsPaddingClass mobileContent">
     <h3 style="color: #e22b2b;">My Hobbies</h3>
-    <label>Listening to Music</label><br/>
-    <label>Cooking</label>
+    <label style="font-size: 16px;">Listening to Music</label><br />
+    <label style="font-size: 16px;">Cooking</label>
   </div>
 
-  <div id="work" class="skillsPaddingClass">
+  <div id="work" class="skillsPaddingClass mobileContent">
     <h3 style="color: #e22b2b;">My Skills</h3>
     <label><b>Competency:</b>&nbsp; UI & UX</label><br />
     <label><b>Programming Languages:</b>&nbsp; C,Python & Java script</label><br />
     <label><b>Web Technologies:</b></label>
-    <div>
-      <label>SAP UI5</label>
-      <div class="ui tiny orange progress">
+    <div style="margin-top: 1rem;">
+      <label class="skillsLableClass">SAP UI5</label>
+      <div class="ui tiny orange progress customProBar">
         <div class="bar" style="width: 85%;"></div>
       </div>
     </div>
     <div>
-      <label>CSS</label>
-      <div class="ui tiny green progress">
+      <label class="skillsLableClass">CSS</label>
+      <div class="ui tiny green progress customProBar">
         <div class="bar" style="width: 90%;"></div>
       </div>
     </div>
     <div>
-      <label>HTML</label>
-      <div class="ui tiny blue progress">
+      <label class="skillsLableClass">HTML</label>
+      <div class="ui tiny blue progress customProBar">
         <div class="bar" style="width: 80%;"></div>
       </div>
     </div>
     <div>
-      <label>React</label>
-      <div class="ui tiny olive  progress">
+      <label class="skillsLableClass">React</label>
+      <div class="ui tiny olive  progress customProBar">
         <div class="bar" style="width: 80%;"></div>
       </div>
     </div>
     <div>
-      <label>Angular</label>
-      <div class="ui tiny red progress">
+      <label class="skillsLableClass">Angular</label>
+      <div class="ui tiny red progress customProBar">
         <div class="bar" style="width: 70%;"></div>
       </div>
     </div>
@@ -95,55 +171,59 @@
 
   <div id="workandexperience" class="pageChangeClass" style="padding: 5px;">
     <h2 class="subHeader" style="color: blueviolet;">Work and Experience</h2>
-    <p>I have 1 year of experience as a front-end developer.Worked in UX also.</p>
+    <p class="workexperienceIntro">I have 1 year of experience as a front-end developer.Worked in UX also.
+      I worked on projects involving web technologies like SAP UI5, React, Angular,HTML,CSS </p>
     <h3 style="color: #e22b2b;">Projects</h3>
-
-    <div class="flip-card" style="padding-bottom: 10px;">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h1>Service Consumer Application</h1>
-        </div>
-        <div class="flip-card-back">
-          <h5>Using this application the users can book a service for their car and can track the same.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card" style="padding-bottom: 10px;">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h1>Smart Planning Engine</h1>
-        </div>
-        <div class="flip-card-back">
-          <h5>This application helps the user to plan the maintanance or drilling tasks for wells in a effective manner
-            so that it will reduce downtime and maximize production. </h5>
+    <div class="projectCardsClass customProBar">
+      <div class="flip-card" style="padding-bottom: 10px;padding-right: 10px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Service Consumer Application</h1>
+          </div>
+          <div class="flip-card-back">
+            <h5>Using this application the users can book a service for their car and can track the same.</h5>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card" style="padding-bottom: 10px;">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h1>Visitor Management System</h1>
-        </div>
-        <div class="flip-card-back">
-          <h5>Visitor management system provides intelligent and effective way to manage the visitors
-            coming to an organisation.facilities like creation of meeting , sending email confirmation , check-in ,
-            checkout,
-            real time notifications and lot more are available.</h5>
+      <div class="flip-card" style="padding-bottom: 10px;padding-right: 10px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Smart Planning Engine</h1>
+          </div>
+          <div class="flip-card-back">
+            <h5>This application helps the user to plan the maintanance or drilling tasks for wells in a effective
+              manner
+              so that it will reduce downtime and maximize production. </h5>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h1>Admission Portal</h1>
+      <div class="flip-card" style="padding-bottom: 10px;padding-right: 10px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Visitor Management System</h1>
+          </div>
+          <div class="flip-card-back">
+            <h5>Visitor management system provides intelligent and effective way to manage the visitors
+              coming to an organisation.facilities like creation of meeting , sending email confirmation , check-in ,
+              checkout,
+              real time notifications and lot more are available.</h5>
+          </div>
         </div>
-        <div class="flip-card-back">
-          <h5>This application helps with the Admission of a
-            student.Features like seat allotment, regulation and curriculum creation,time tables, marks creation and lot
-            more.</h5>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Admission Portal</h1>
+          </div>
+          <div class="flip-card-back">
+            <h5>This application helps with the Admission of a
+              student.Features like seat allotment, regulation and curriculum creation,time tables, marks creation and
+              lot
+              more.</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -152,14 +232,47 @@
 
   <div id="contact" class="pageChangeClass" style="padding: 5px;">
     <h2 class="subHeader" style="color: blueviolet;">Contact</h2>
-    <label style="padding: 4px;"><i class="map marker alternate icon"></i>&nbsp; Vizianagaram, Andhra Pradesh, 535522.</label><br/>
-    <label style="padding: 4px;"><i class="phone icon"></i>&nbsp; +91 7989826029</label><br/>
-    <label style="padding: 4px;"><i class="envelope icon"></i>&nbsp; sarathkumar.merangi@gmail.com</label>
-    <h5 style="color: blueviolet;">foloow me on social media</h5>
+    <h5 style="padding-bottom: 5px;" class="contactlableClass">Have a question or want to work together? below are the contact details:</h5><br/>
+    <label class="contactlableClass" style="padding: 4px;"><i class="map marker alternate icon"></i>&nbsp; Vizianagaram, Andhra Pradesh,
+      535522.</label><br />
+    <label class="contactlableClass" style="padding: 4px;"><i class="phone icon"></i>&nbsp; +91 7989826029</label><br />
+    <label class="contactlableClass" style="padding: 4px;"><i class="envelope icon"></i>&nbsp; sarathkumar.merangi@gmail.com</label>
+    <h5 class="contactlableClass" style="color: blueviolet;">foloow me on social media</h5>
     <div style="padding: 4px;">
       <a href="www.twitter.com/SarathMerangi" target="_blank"><i class="large twitter icon"></i></a>
       <a href="www.linkedin.com/in/sarath-kumar-merangi8096" target="_blank"><i class="large linkedin icon"></i></a>
       <a href="https://github.com/sarath809605" target="_blank"><i class="large github icon"></i></a>
     </div>
   </div>
+
+</div>
+  <!-- <script>
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const openMenu = document.querySelector('.openMenu');
+    const homenav = document.querySelector('.homenav');
+    const aboutnav = document.querySelector('.aboutnav');
+    const workandexperiencenav = document.querySelector('.workandexperiencenav');
+    const contactnav = document.querySelector('.contactnav');
+
+    openMenu.addEventListener('click', show);
+    closeMenu.addEventListener('click', close);
+
+    document.addEventListener("click", function (e) {
+        if(e.target == homenav || e.target == aboutnav || e.target == workandexperiencenav || e.target == contactnav){
+            mainMenu.style.top = '-100%';
+        }
+
+    }, false);
+
+    function show() {
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+    }
+    function close() {
+        mainMenu.style.top = '-100%';
+    }
+</script> -->
+
+
 </body>

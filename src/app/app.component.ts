@@ -10,7 +10,47 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.fnAutoType();
+
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const openMenu = document.querySelector('.openMenu');
+    const homenav = document.querySelector('.homenav');
+    const aboutnav = document.querySelector('.aboutnav');
+    const workandexperiencenav = document.querySelector('.workandexperiencenav');
+    const contactnav = document.querySelector('.contactnav');
+
+    openMenu.addEventListener('click', show);
+    closeMenu.addEventListener('click', close);
+
+    document.addEventListener("click", function (e) {
+        if(e.target == homenav || e.target == aboutnav || e.target == workandexperiencenav || e.target == contactnav){
+            mainMenu.style.top = '-100%';
+        }
+
+    }, false);
+
+    function show() {
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+    }
+    function close() {
+        mainMenu.style.top = '-100%';
+    }
+
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
   }
+  
 
   fnAutoType() {
     var i = 0;
