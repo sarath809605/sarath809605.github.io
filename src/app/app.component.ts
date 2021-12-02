@@ -1,5 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+function showMenu(menuItem) {
+  menuItem.style.display = 'flex';
+  menuItem.style.top = '0';
+  // mainMenu2.className += " menuOpenClass";
+  // mainMenu2.classList.remove("menuCloseClass");
+}
+
+function hideMenu(menuItem) {
+  menuItem.style.top = '-100%';
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +23,7 @@ export class AppComponent implements OnInit {
     this.fnAutoType();
 
     const mainMenu = document.querySelector('.mainMenu');
+    const mainMenu2 = document.getElementById("mainMenuOpen");
     const closeMenu = document.querySelector('.closeMenu');
     const openMenu = document.querySelector('.openMenu');
     const homenav = document.querySelector('.homenav');
@@ -24,31 +36,40 @@ export class AppComponent implements OnInit {
 
     document.addEventListener("click", function (e) {
         if(e.target == homenav || e.target == aboutnav || e.target == workandexperiencenav || e.target == contactnav){
-            mainMenu.style.top = '-100%';
+            // mainMenu.style.top = '-100%';
+            // mainMenu2.classList.remove("menuOpenClass");
+            // mainMenu2.classList.add("menuCloseClass");
+            hideMenu(mainMenu2);
         }
 
     }, false);
 
     function show() {
-        mainMenu.style.display = 'flex';
-        mainMenu.style.top = '0';
+      showMenu(mainMenu2);
+        // mainMenu.style.display = 'flex';
+        // mainMenu.style.top = '0';
+        // mainMenu2.className += " menuOpenClass";
+        // mainMenu2.classList.remove("menuCloseClass");
     }
     function close() {
-        mainMenu.style.top = '-100%';
+       hideMenu(mainMenu2);
+        // mainMenu.style.top = '-100%';
+        // mainMenu2.classList.remove("menuOpenClass");
+        // mainMenu2.classList.add("menuCloseClass");
     }
 
-    window.onscroll = function() {myFunction()};
+    // window.onscroll = function() {myFunction()};
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    // var navbar = document.getElementById("navbar");
+    // var sticky = navbar.offsetTop;
 
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
+    // function myFunction() {
+    //   if (window.pageYOffset >= sticky) {
+    //     navbar.classList.add("sticky")
+    //   } else {
+    //     navbar.classList.remove("sticky");
+    //   }
+    // }
   }
   
 

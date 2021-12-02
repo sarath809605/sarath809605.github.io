@@ -185,6 +185,15 @@ hr.dashed {
     z-index: -10 !important;
   }
 
+  .menuOpenClass{
+    top: 0;
+    display: flex;
+  }
+
+  .menuCloseClass{
+    top:-100%;
+  }
+
 
 
 
