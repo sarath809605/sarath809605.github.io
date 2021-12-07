@@ -139,6 +139,8 @@ hr.dashed {
     box-shadow: 0 4px 8px 0 rgba(22, 21, 21, 0.35);
     z-index: -10 !important;
     background-color: #fff;
+    border-color: blueviolet;
+    border-style: double;
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -217,7 +219,8 @@ nav .mainMenu li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 nav .mainMenu li a:hover {
@@ -278,18 +281,34 @@ nav .logo {
   font-size: 16px;
 }
 
+.contactCenterClass{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width:1100px) {
   .subHeader{
     display: flex;
     justify-content: center;
   }
+
+  .projectCardsClass{
+    padding: 0 3rem 0 3rem;
+  }
+
+  .cardDesktopPadding{
+    padding: 0 0 0 3rem;
+    margin-bottom: 1rem;
+  }
+
   .aboutmePtag{
     position: relative;
-    font-size: 23px;
+    font-size: 1.2rem;
     padding-left: 6rem;
     padding-right: 6rem;
     padding-bottom: 2rem;
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     animation-name: aboutmeIntro;
@@ -298,7 +317,7 @@ nav .logo {
   }
 
   .workexperienceIntro{
-    font-size: 23px;
+    font-size: 1.3rem;
   }
 
   .skillsProfilecardDiv{
@@ -361,7 +380,7 @@ nav .logo {
 
 
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 500px) {
     .mobileContent{
       display: block;
     }
@@ -407,6 +426,10 @@ nav .logo {
         text-decoration: underline;
      }
       
+     .subHeaderMobile{
+       display: flex;
+       justify-content: center;
+     }
       .title {
         color: #5e5858;
         font-size: 18px;
