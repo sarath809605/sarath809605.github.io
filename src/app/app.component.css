@@ -85,8 +85,91 @@ hr.dashed {
   .subHeader {
     text-underline-position: under;
     text-decoration: underline;
+    text-decoration-thickness: 4px;
+    animation-name: headerHighlight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
  }
+
+ @keyframes headerHighlight {
+  0%   {text-decoration-color:blueviolet;}
+  100% {text-decoration-color: orange;}
+}
+
+.movingProgressbar85Class{
+  animation-name: changeProgress85;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeProgress85{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+    transition: transform 150ms ease-in;
+  }
+}
+
+.movingProgressbar90Class{
+  animation-name: changeProgress90;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeProgress90{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+    transition: transform 150ms ease-in;
+  }
+}
+
+.movingProgressbar80Class{
+  animation-name: changeProgress80;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeProgress80{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+    transition: transform 150ms ease-in;
+  }
+}
+
+.movingProgressbar70Class{
+  animation-name: changeProgress70;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeProgress70{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+    transition: transform 150ms ease-in;
+  }
+}
   
+
+
   .title {
     color: #5e5858;
     font-size: 18px;
@@ -463,11 +546,5 @@ nav .logo {
     .logo h1{
       margin-left: 7rem;
     }
-
-
-
-   
-      
-
       
 }
