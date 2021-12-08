@@ -202,16 +202,6 @@ hr.dashed {
   }
   
 
-  /* @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  } */
-
-  /* @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-  } */
-
   .flip-card-inner {
     position: relative;
     width: 330px;
