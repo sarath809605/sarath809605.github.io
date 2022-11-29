@@ -113,5 +113,6 @@ export class AppComponent implements OnInit {
   onContactClick(): any {
     var element = document.getElementById("contact");
     element.scrollIntoView({ behavior: "smooth", block: "start" });
+    var element2 = document.getElementById("contact");
   }
 }
